@@ -1,0 +1,30 @@
+2018-10-06 11:28:43.381 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is not null 
+2018-10-06 11:28:43.521 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:28:43.561 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 0
+2018-10-06 11:32:12.469 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is not null 
+2018-10-06 11:32:12.536 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:32:12.560 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 0
+2018-10-06 11:32:32.735 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is not null 
+2018-10-06 11:32:32.805 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:32:32.839 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1
+2018-10-06 11:41:19.017 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is null 
+2018-10-06 11:41:19.083 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:41:19.107 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1
+2018-10-06 11:43:10.163 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is null 
+2018-10-06 11:43:10.242 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:43:10.268 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1
+2018-10-06 11:43:10.312 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is not null and parent_id = ? 
+2018-10-06 11:43:10.313 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 1(Long)
+2018-10-06 11:43:10.314 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 0
+2018-10-06 11:43:56.552 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is null 
+2018-10-06 11:43:56.612 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:43:56.638 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1
+2018-10-06 11:43:56.654 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is not null and parent_id = ? 
+2018-10-06 11:43:56.655 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 2(Long)
+2018-10-06 11:43:56.656 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1
+2018-10-06 11:52:16.767 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is null 
+2018-10-06 11:52:16.811 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 
+2018-10-06 11:52:16.836 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1
+2018-10-06 11:52:16.852 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==>  Preparing: SELECT article_category_id, article_category_name, priority, create_time, last_edit_time, parent_id FROM tb_article_category WHERE parent_id is not null and parent_id = ? 
+2018-10-06 11:52:16.853 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - ==> Parameters: 2(Long)
+2018-10-06 11:52:16.855 [main] DEBUG c.a.i.dao.ArticleCategoryDao.queryArticleCategory - <==      Total: 1

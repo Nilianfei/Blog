@@ -8,6 +8,7 @@ public class PersonInfo {
 	private String email;
 	private String gender;
 	private Integer enableStatus;
+	//1：用户，2：超级管理员
 	private Integer userType;
 	private Date createTime;
 	private Date lastEditTime;
