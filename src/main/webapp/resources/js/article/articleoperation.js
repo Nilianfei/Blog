@@ -2,8 +2,8 @@
  * 
  */
 $(function() {
-	var initUrl = '/iblog/articleadmin/getarticleinitinfo';
-	var addArticleUrl = '/iblog/articleadmin/addarticle';
+	var initUrl = '/iBlog/articleadmin/getarticleinitinfo';
+	var addArticleUrl = '/iBlog/articleadmin/addarticle';
 	getArticleInitInfo();
 	function getArticleInitInfo() {
 		$.getJSON(initUrl, function(data) {
@@ -37,7 +37,7 @@ $(function() {
 					type : 'POST',
 					data : formData,
 					contentType : false,
-					proceesData : false,
+					processData : false,
 					cache : false,
 					success : function(data) {
 						if (data.success) {

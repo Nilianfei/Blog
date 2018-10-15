@@ -7,6 +7,9 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -54,7 +57,9 @@ public class ArticleManagementController {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		
 		// 1.接收并转化相应的参数
-		String articleStr = HttpServletRequestUtil.getString(request, "articleStr");
+//		String articleStr = HttpServletRequestUtil.getString(request, "articleStr");
+		Map<String, String> params = HttpServletRequestUtil.getParams(request);
+		String articleStr = params.get("articleStr");
 		ObjectMapper mapper = new ObjectMapper();
 		Article article = null;
 		try {
