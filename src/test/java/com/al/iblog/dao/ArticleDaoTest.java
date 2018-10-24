@@ -18,6 +18,14 @@ public class ArticleDaoTest extends BaseTest{
 	private ArticleDao articleDao;
 	
 	@Test
+	public void testQueryByArticleId(){
+		long articleId=1;
+		Article article = articleDao.queryByArticleId(articleId);
+		System.out.println("categoryId:"+article.getArticleCategory().getArticleCategoryId());
+		System.out.println("categoryName:"+article.getArticleCategory().getArticleCategoryName());
+	}
+	
+	@Test
 	@Ignore
 	public void testInsertArticle() {
 		Article article = new Article();
@@ -37,6 +45,7 @@ public class ArticleDaoTest extends BaseTest{
 	}
 	
 	@Test
+	@Ignore
 	public void testUpdateArticle() {
 		Article article = new Article();
 		article.setArticleId(1L);

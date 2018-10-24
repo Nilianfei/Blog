@@ -19,14 +19,14 @@ public interface ArticleService {
 	 * @param articleId
 	 * @return
 	 */
-	//public Article getByArticleId(long articleId);
+	Article getByArticleId(long articleId);
 	/**
 	 * 更新文章信息
 	 * @param article
 	 * @return
 	 * @throws ArticleOperationException
 	 */
-	//public ArticleExecution modifyArticle(Article article) throws ArticleOperationException;
+	ArticleExecution modifyArticle(Article article) throws ArticleOperationException;
 	/**
 	 * 添加文章
 	 * @param article

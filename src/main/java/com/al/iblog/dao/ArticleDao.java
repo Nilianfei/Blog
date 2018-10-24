@@ -15,4 +15,6 @@ public interface ArticleDao {
 	 * @return
 	 */
 	int updateArticle(Article article);
+	
+	Article queryByArticleId(long articleId);
 }

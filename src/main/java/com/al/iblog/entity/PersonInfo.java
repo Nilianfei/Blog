@@ -4,12 +4,19 @@ import java.util.Date;
 
 public class PersonInfo {
 	private Long userId;
+	private String name;
 	private String profileImg;
 	private String email;
 	private String gender;
 	private Integer enableStatus;
 	//1：用户，2：超级管理员
 	private Integer userType;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	private Date createTime;
 	private Date lastEditTime;
 	

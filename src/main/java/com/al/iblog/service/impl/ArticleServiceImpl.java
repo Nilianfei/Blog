@@ -39,4 +39,24 @@ public class ArticleServiceImpl implements ArticleService {
 		return new ArticleExecution(ArticleStateEnum.CHECK, article);
 	}
 
+	@Override
+	public Article getByArticleId(long articleId) {
+		return articleDao.queryByArticleId(articleId);
+	}
+
+	@Override
+	public ArticleExecution modifyArticle(Article article) throws ArticleOperationException {
+		try{
+			article.setLastEditTime(new Date());
+		int effectedNum = articleDao.updateArticle(article);
+		if(effectedNum <= 0) {
+			return new ArticleExecution(ArticleStateEnum.INNER_ERROR);
+		} else{
+			article = articleDao.queryByArticleId(article.getArticleId());
+			return new ArticleExecution(ArticleStateEnum.SUCCESS, article);
+		}} catch(Exception e){
+			throw new ArticleOperationException("modifyArticle error:"+ e.getMessage());
+		}
+	}
+
 }

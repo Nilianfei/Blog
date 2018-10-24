@@ -2,6 +2,7 @@ package com.al.iblog.service;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -19,6 +20,15 @@ public class ArticleServiceTest extends BaseTest {
 	private ArticleService articleService;
 
 	@Test
+	public void testModifyShop() throws ArticleOperationException {
+		Article article = new Article();
+		article.setArticleId(1L);
+		article.setArticleName("修改过后的文章名字");
+		ArticleExecution articleExecution = articleService.modifyArticle(article);
+	}
+	
+	@Test
+	@Ignore
 	public void testAddArticle() throws ArticleOperationException{
 		Article article = new Article();
 		PersonInfo owner = new PersonInfo();
